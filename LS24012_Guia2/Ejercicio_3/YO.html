@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Presentación</title>
+    <link rel="stylesheet" href="css/estilo_bio.css"> 
+</head>
+<body>
+    <section id="portada">
+        <h1>Bienvenido a mi zona</h1>
+        <button onclick="scrollToBio()">Ir a mi biografía</button>
+    </section>
+
+    <section id="biografia">
+        <img src="imagenes/yo.jpg" alt="Mi foto" class="biografia-img"> 
+        <h2>Biografía</h2>
+        <p class="texto-biografia">Mi nombre es Israel Gilberto Lara Sarmiento y nací el 25 de diciembre de 2004 en San Miguel, El Salvador. 
+            Mis padres, Iván Lara y Angélica Sarmiento, nacieron en San Salvador. Estudié en el Colegio Josué hasta los 9 años, 
+            cuando me mudé a Morazán, al municipio de San Francisco Gotera, donde continué mis estudios hasta los 15 años. 
+            Luego regresé a San Miguel para estudiar bachillerato en el Instituto Nacional Isidro Menéndez, conocido como INIM, donde me especialicé en mecánica industrial.
+
+            Actualmente, curso el primer año de ingeniería en sistemas en la Universidad Nacional de El Salvador (UES). 
+            Uno de mis grandes sueños es desarrollarme como profesional y tener la oportunidad de viajar a diferentes países.</p>
+    </section>
+
+    <section id="pasatiempos">
+        <h2>Pasatiempos</h2>
+        <img src="imagenes/vieojuegosjpg.jpg" alt="Imagen de mis pasatiempos" class="pasatiempos-img"> 
+        <p class="texto-pasatiempos">Disfruto de diversas actividades en mi tiempo libre. Me gusta salir a comer, 
+            explorar nuevos lugares para disfrutar de diferentes tipos de comida, e ir al cine para ver las últimas películas. 
+            También soy un aficionado de los videojuegos, que me permiten desconectarme y disfrutar de la diversión en un mundo virtual.
+            Además, escuchar música es una de mis formas favoritas de relajarme, y siempre he tenido un gusto especial por las matemáticas..</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Presentación. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function scrollToBio() {
+            document.getElementById("biografia").scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
